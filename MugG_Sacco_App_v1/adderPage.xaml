@@ -1,0 +1,131 @@
+﻿<Page x:Class="adderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MugG_Sacco_App"
+      mc:Ignorable="d" 
+      d:DesignHeight="370" d:DesignWidth="690"
+      Title="adderPage">
+    <DockPanel Background="{x:Null}">
+        <TabControl Width="690">
+            <TabControl.Background>
+                <ImageBrush/>
+            </TabControl.Background>
+
+            <TabItem x:Name="addDriversTabItem" Height="50" Header="DRIVERS" FontFamily="Showcard Gothic" FontSize="26.667" Margin="0,-1,-83,1">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF0CFF00" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="Images/Honeyomb.jpg" />
+                    </Grid.Background>
+                    <Label Height="40" Margin="0,10,539,262" Background="#FF0CFF00" Content="First Name" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="0,117,539,155" Content="Sir Name" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="0,227,536,45" Content="ID Number" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="445,10,20,262" Content="Car Number Plate" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="445,112,109,160" Content="Salary" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="159,20,348,262">
+                        <TextBox x:Name="addDriverFirstNameTextBox" Height="40" FontFamily="Comic Sans MS" FontSize="18.667" Margin="0"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="159,127,348,155">
+                        <TextBox x:Name="addDriverSirNameTextBox" Height="40" Margin="0" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="159,237,348,45">
+                        <TextBox x:Name="addDriverIDTextBox" Height="40" Margin="0" FontFamily="Comic Sans MS" FontSize="18.667" />
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="465,68,44,214">
+                        <TextBox x:Name="addDriverNumberPlateTextBox" Height="40" Margin="0" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="466,172,50,110">
+                        <TextBox x:Name="addDriverSalaryTextBox" Height="40" Margin="0" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Button x:Name="addDriversSubmitButton" Content="SUBMIT" HorizontalAlignment="Left" Margin="552,245,0,0" VerticalAlignment="Top" Width="122" Height="57"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="addConductorsTabItem" Width="228" Header="CONDUCTORS" FontFamily="Showcard Gothic" FontSize="26.667" Margin="95,0,-95,-2">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF0CFF00" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="Images/Honeyomb.jpg"/>
+                    </Grid.Background>
+                    <Label Height="40" Margin="0,10,540,262" Background="#FF0CFF00" Content="First Name" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="0,117,544,155" Content="Sir Name" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="0,227,544,45" Content="ID Number" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="445,10,20,262" Content="Car Number Plate" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="445,112,109,160" Content="Salary" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="159,20,365,262">
+                        <TextBox x:Name="addCondFirstNameTextBox" Height="40" Margin="0" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="159,127,365,155">
+                        <TextBox x:Name="addCondSirNameTextBox" Height="40" Margin="0" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="159,237,365,45">
+                        <TextBox x:Name="addCondIDNumberTextBox" Height="40" Margin="0" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="465,68,44,214">
+                        <TextBox x:Name="addCondNumberPlateTextBox" Height="40" Margin="0" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="466,172,50,110">
+                        <TextBox x:Name="addCondSalaryTextBox" Height="40" Margin="0" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Button x:Name="addConductorsSubmitButton" Content="SUBMIT" HorizontalAlignment="Left" Margin="555,248,0,0" VerticalAlignment="Top" Width="119" Height="54"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="addVehiclesTabItem" Width="228" Height="50" Header="VEHICLES" FontFamily="Showcard Gothic" FontSize="26.667" Margin="108,0,-108,0">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FF0CFF00" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="Images/Honeyomb.jpg"/>
+                    </Grid.Background>
+                    <Label Height="40" Margin="25,10,513,262" Background="#FF0CFF00" Content="Driver's ID" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="25,111,513,161" Content="Capacity" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="25,222,513,50" Content="Make" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="280,10,180,262" Content="Car Number Plate" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="280,112,180,160" Content="Value" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    <Label Height="40" Margin="280,222,180,50" Content="Model" Background="#FF0CFF00" FontSize="26.667" FontFamily="Carnivalee Freakshow" />
+                    
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="50,65,470,217">
+                        <TextBox x:Name="addVehicleDriverIDTextBox" Height="40" Margin="1" FontFamily="Comic Sans MS" FontSize="18.667">
+
+                        </TextBox>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="50,172,470,110">
+                        <TextBox x:Name="addVehicleCapacityTextBox" Height="40" Margin="1" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="50,279,470,3">
+                        <TextBox x:Name="addVehicleMakeTextBox" Height="40" Margin="1" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="313,68,180,214">
+                        <TextBox x:Name="addVehicleNumberPlateTextBox" Height="40" Margin="1" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="313,172,180,110">
+                        <TextBox x:Name="addVehicleValueTextBox" Height="40" Margin="1" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    <Border BorderBrush="Orange" BorderThickness="3" CornerRadius="6" Margin="313,277,180,5">
+                        <TextBox x:Name="addVehicleModelTextBox" Height="40" Margin="1" FontFamily="Comic Sans MS" FontSize="18.667"/>
+                    </Border>
+                    
+                    <Button x:Name="addVehiclesSubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="547,242,0,0" VerticalAlignment="Top" Width="127" Height="60"/>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+    </DockPanel>
+</Page>
